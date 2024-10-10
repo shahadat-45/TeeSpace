@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div data-image-uploader data-image-uploader-file-type-regex="(\.jpg|\.jpeg|\.png)$" data-image-uploader-max-file-size="8" class="form__field form__load-img">
+        <p class="form__title">Upload your images (Maximum 3 images)</p>
+        <div class="load__img-wrap">
+          <div class="load__img-content" data-image-uploader-drop-area>
+            <div class="content__wrapper" data-image-uploader-content>              
+              <svg width="65" height="53" viewBox="0 0 65 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M55.9414 21.095C56.0247 20.7616 56.0872 20.4179 56.1289 20.0637C56.1706 19.7096 56.1914 19.345 56.1914 18.97C56.1914 16.22 55.2122 13.8658 53.2539 11.9075C51.2956 9.94914 48.9414 8.96997 46.1914 8.96997C45.7331 8.96997 45.2956 9.00122 44.8789 9.06372C44.4622 9.12622 44.0456 9.19914 43.6289 9.28247C42.8372 6.8658 41.3997 4.87622 39.3164 3.31372C37.2331 1.75122 34.8581 0.969971 32.1914 0.969971C29.4414 0.969971 27.0143 1.78247 24.9102 3.40747C22.806 5.03247 21.3997 7.09497 20.6914 9.59497C19.9831 9.38664 19.2539 9.23039 18.5039 9.12622C17.7539 9.02205 16.9831 8.96997 16.1914 8.96997C13.9831 8.96997 11.8997 9.38664 9.94141 10.22C8.02474 11.0533 6.33724 12.1991 4.87891 13.6575C3.42057 15.1158 2.27474 16.8033 1.44141 18.72C0.608073 20.6783 0.191406 22.7616 0.191406 24.97C0.191406 27.1783 0.608073 29.2616 1.44141 31.22C2.27474 33.1366 3.42057 34.8241 4.87891 36.2825C6.33724 37.7408 8.02474 38.8866 9.94141 39.72C11.8997 40.5533 13.9831 40.97 16.1914 40.97H24.1914V52.97H40.1914V40.97H54.1914C56.9414 40.97 59.2956 39.9908 61.2539 38.0325C63.2122 36.0741 64.1914 33.72 64.1914 30.97C64.1914 28.5116 63.3997 26.3658 61.8164 24.5325C60.2331 22.6991 58.2747 21.5533 55.9414 21.095ZM36.1914 36.97V48.97H28.1914V36.97H18.1914L32.1914 22.97L46.1914 36.97H36.1914Z" fill="#7E7E7E"/>
+                </svg>
+              <p>Drag & Drop Files Here</p>
+                <span>or</span>
+              <button type="button" class="blue--btn">Browse Files</button>
+              <span class="count__img"><span class="count">0</span> of 10</span>
+            </div>
+            <input type="file" enctype="multipart/form-data" accept=".png, .jpg, .jpeg" multiple style="display: none;">
+          </div>
+        </div>
+        <div class="upload__thumbnails hidden" data-thumbnails-container>
+          <div>
+            <div>
+              <!-- <span>Uploaded files</span> -->
+              <div class="imgs__wrapper">
+                <div class="item__imgs" data-image-preview-container>
+                  <template data-image-preview>
+                    <div class="item__wrapper" data-image-preview-element>
+                      <div class="remove__img">
+                        <button class="remove__icon" data-removal-button>
+                          <svg viewBox="0 0 12 12" width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1.2 10.8 0 6 4.8 1.2 0 0 1.2 4.8 6 0 10.8 1.2 12 6 7.2l4.8 4.8 1.2-1.2L7.2 6 12 1.2Z" fill="#4B4B4B" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="review__img">
+                        <picture>
+                          <img style="width: 50px; height: 80px ; object-fit: cover;"/>
+                        </picture>
+                      </div>
+                    </div>
+                  </template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="" alt="">
+      <script src="dropify.js"></script>
+</body>
+</html>
